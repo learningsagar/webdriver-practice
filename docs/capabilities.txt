@@ -1,0 +1,35 @@
+https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_Capabilities.html
+
+https://developer.mozilla.org/en-US/docs/Web/WebDriver/Capabilities#list-of-capabilities
+Firefox capabilities (moz:firefoxOptions)
+Chrome capabilities (goog:chromeOptions)
+
+
+console.log('capabilities')
+console.log(await driver.getCapabilities());
+
+Capabilities {
+  map_: Map(18) {
+    'acceptInsecureCerts' => false,
+    'browserName' => 'chrome',
+    'browserVersion' => '113.0.5672.126',
+    'chrome' => {
+      chromedriverVersion: '113.0.5672.63 (0e1a4471d5ae5bf128b1bd8f4d627c8cbd55f70c-refs/branch-heads/5672@{#912})',
+      userDataDir: '/var/folders/gd/nhcpxb_j00q3ky08_w25vn_h0000gn/T/.com.google.Chrome.3CP5YP'
+    },
+    'goog:chromeOptions' => { debuggerAddress: 'localhost:57467' },
+    'networkConnectionEnabled' => false,
+    'pageLoadStrategy' => 'normal',
+    'platformName' => 'mac os x',
+    'proxy' => {},
+    'setWindowRect' => true,
+    'strictFileInteractability' => false,
+    'timeouts' => { implicit: 0, pageLoad: 300000, script: 30000 },
+    'unhandledPromptBehavior' => 'dismiss and notify',
+    'webauthn:extension:credBlob' => true,
+    'webauthn:extension:largeBlob' => true,
+    'webauthn:extension:minPinLength' => true,
+    'webauthn:extension:prf' => true,
+    'webauthn:virtualAuthenticators' => true
+  }
+}
